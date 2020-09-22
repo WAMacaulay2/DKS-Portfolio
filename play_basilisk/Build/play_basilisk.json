@@ -1,0 +1,12 @@
+{
+"companyName": "Dragon King Studios",
+"productName": "The Basilisk's Maze",
+"dataUrl": "play_basilisk.data.unityweb",
+"wasmCodeUrl": "play_basilisk.wasm.code.unityweb",
+"wasmFrameworkUrl": "play_basilisk.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000"
+}
