@@ -1,0 +1,68 @@
+:root {
+	--back: #B8CDE0;
+	--back-shadow: #9bb0d1;
+	--fore: #82A4C3;
+	--button: #6B88A1;
+}
+
+body {
+	background-color: var(--back);
+	font-size: 20px;
+	font-family: 'Almendra', serif;
+}
+
+.container {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+#head, #foot {
+	background-color: var(--fore);
+}
+
+#head {
+	box-shadow: 0 2px var(--back-shadow);
+}
+
+#header-nav {
+	clear: both;
+}
+
+.nav-item {
+	background-color: var(--button);
+	border: 1px black solid;
+	border-radius: 10px;
+	margin: 5px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.jumbotron {
+	padding: 0;
+}
+
+.jumbotron img {
+	width: 100%;
+}
+
+.hometile-foodchain, .hometile-basilisk {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	font-color: white;
+	box-shadow: 0 2px 2px 2px var(--back-shadow);
+}
+
+.hometile-foodchain {
+	background: url("../images/foodchain_hometile.png") no-repeat;
+	background-position: center;
+}
+
+.hometile-basilisk {
+	background: url("../images/basiliskmaze_hometile.png") no-repeat;
+	background-position: center;
+	border-radius: 50px;
+}

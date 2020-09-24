@@ -5,16 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dragon King Studios</title>
+	<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-expand-sm navbar-light bg-light">
+	<header id="head">
+		<nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand" href="index.html">
-				<!-- <img src="images/dkslogo_navbar.png" alt="Dragon King Studios"> -->
-				<h1>Dragon King Studios</h1>
+				<img src="images/dks_header.png" alt="Dragon King Studios">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -25,10 +25,10 @@
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#"><img src="images/foodchain_navbar_icon.png">Food Chain</a>
+						<a class="nav-link disabled" href="#"><img src="images/foodchain_navbar_icon.png"> Food Chain</a>
 						</li>
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#"><img src="images/basiliskmaze_navbar_icon.png">The Basilisk's Maze</a>
+						<a class="nav-link disabled" href="#"><img src="images/basiliskmaze_navbar_icon.png"> The Basilisk's Maze</a>
 						</li>
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#">About</a>
@@ -39,29 +39,27 @@
 	</header>
 
 	<div class="container">
-		<div class="jumbotron"><img src="images/gfx_dkslogo.png" alt="Dragon King Studios logo"></div>
-		<h2 class="text-center">The Games of Dragon King Studios</h2>
-		<p class="text-center">Lorem Ipsum etcetera etcetara blah blah blah</p>
+		<div class="jumbotron"><img src="images/dks_jumbo_lg.png" alt="Dragon King Studios logo"></div>
+		<h1 class="text-center">The Games of Dragon King Studios</h1>
+		<p class="text-center">Growing up playing video games, I got into computer science when I learned one person to make a game if they just knew how.<br>While I ended up deciding that making games for a living wasn't for me, I did complete and release two games on Google Play under my personal brand, "Dragon King Studios."<br>They may not have earned me any money, but they got me some experience programming and finishing projects, and they can help me out one more time by showcasing my capabilities in web coding.<br><br>Check them out on their personal pages:</p>
 		<div class="row">
-			<div class="col-md-6 col-sm-12">
-				<img src="images/foodchain_hometile.png">
-				<span>Food Chain</span><br><span>There's Always a Bigger Fish</span>
+			<div class="col-lg-6 col-md-12">
+				<div class="hometile-foodchain"></div>
 			</div>
-			<div class="col-md-6 col-sm-12">
-				<img src="images/basiliskmaze_hometile.png">
-				<span>The Basilisk's Maze</span><br><span>Play Now!</span>
+			<div class="col-lg-6 col-md-12">
+				<div class="hometile-basilisk"></div>
 			</div>
 		</div>
 	</div>
 
-	<footer>
-		<nav class="navbar fixed-bottom navbar-light bg-light">
+	<footer id="foot">
+		<nav class="navbar navbar-light">
 			<div class="navbar-text mx-auto">&copy;Alex Macaulay</div>
 		</nav>
 	</footer>
 
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
