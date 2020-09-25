@@ -16,7 +16,8 @@ body {
 	margin-bottom: 50px;
 }
 
-#head, #foot {
+/* HEADER/FOOTER STYLES */
+#head>.navbar, #foot>.navbar {
 	background-color: var(--fore);
 }
 
@@ -31,18 +32,33 @@ body {
 .nav-item {
 	background-color: var(--button);
 	border: 1px black solid;
-	border-radius: 10px;
+	border-radius: 15px;
+	min-width: 4em;
 	margin: 5px;
 	font-size: 1.5em;
 	text-align: center;
 }
 
+.dropdown-menu {
+	background-color: var(--button);
+	border: 1px black solid;
+	border-radius: 5px;
+}
+
+.dropdown-item:hover {
+	background-color: var(--back);
+}
+
+
+/* MAIN PAGE STYLES */
 .jumbotron {
 	padding: 0;
 }
 
 .jumbotron img {
 	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px 2px var(--back-shadow);
 }
 
 .hometile-foodchain, .hometile-basilisk {
@@ -65,4 +81,34 @@ body {
 	background: url("../images/basiliskmaze_hometile.png") no-repeat;
 	background-position: center;
 	border-radius: 50px;
+}
+
+/* ABOUT */
+#bio-pic {
+	width: 300px;
+	height: 400px;
+	background-color: var(--fore);
+	border-radius: 10px;
+	box-shadow: 0 2px 2px 2px var(--back-shadow);
+	margin: 10px;
+}
+
+@media (min-width: 768px /*md*/) {
+	#bio-pic {
+		float: right;
+	}
+}
+
+/* BASILISK'S MAZE */
+#gameContainer {
+	width: 960px;
+	height: 600px;
+	margin: auto;
+}
+
+@media (max-width: 991px)
+{
+	#gameContainer {
+		display: none;
+	}
 }
