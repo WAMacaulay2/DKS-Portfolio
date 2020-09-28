@@ -19,6 +19,8 @@ body {
 
 a {
 	color: var(--basiliskEye);
+	min-width: 1px;
+	min-height: 1px;
 }
 
 a:hover {
@@ -73,6 +75,7 @@ a:hover {
 .hometile-foodchain, .hometile-basilisk {
 	width: 400px;
 	height: 400px;
+	background-color: var(--fore);
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -81,14 +84,14 @@ a:hover {
 	box-shadow: 0 2px 2px 2px var(--back-shadow);
 }
 
-.hometile-foodchain {
+/*.hometile-foodchain {
 	background: url("../images/foodchain_hometile.png") no-repeat;
 	background-position: center;
-}
+}*/
 
 .hometile-basilisk {
-	background: url("../images/basiliskmaze_hometile.png") no-repeat;
-	background-position: center;
+	/*background: url("../images/basiliskmaze_hometile.png") no-repeat;
+	background-position: center;*/
 	border-radius: 50px;
 }
 
