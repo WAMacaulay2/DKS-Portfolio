@@ -60,6 +60,10 @@ a:hover {
 	background-color: var(--back);
 }
 
+.dropdown-item.active {
+	background-color: var(--button);
+}
+
 
 /* MAIN PAGE STYLES */
 .jumbotron {
