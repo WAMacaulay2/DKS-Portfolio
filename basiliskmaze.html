@@ -15,18 +15,18 @@
 	<header id="head"></header>	
 
 	<div class="container">
-		<h1 class="gameTitle text-center">The Basilisk's Maze</h1>
+		<h1 class="gameTitle">The Basilisk's Maze</h1>
 		<p id="tooSmallNotice" class="text-center">View in a larger browser to play the game!</p>
 		
-		<div id="gameContainer">
+		<div id="gameContainer" class="has-shadow">
 			<button id="startBasiliskButton" type="button" onclick="startBasGame()">
 				Play Now!
 			</button>
 		</div>
 
-		<p id="gameInstructions"><span class="font-weight-bold">How to play:</span><br>Choose a character and set the difficulty of the maze.<br>There are three settings to change the difficulty.<br>The harder the maze, the more treasure you can score.<br><br>Navigate to the center of the maze to find the key.<br>Then look for the exit on the maze's edge.<br><br>Beware the Basilisk's Gaze and haunted treasure.<br>They'll both slow you down.<br><br>And above all,<br>don't get caught by the Basilisk<br>or he'll eat you up!</p>
+		<p id="gameInstructions" class="has-shadow"><span class="font-weight-bold">How to play:</span><br>Choose a character and set the difficulty of the maze.<br>There are three settings to change the difficulty.<br>The harder the maze, the more treasure you can score.<br><br>Navigate to the center of the maze to find the key.<br>Then look for the exit on the maze's edge.<br><br>Beware the Basilisk's Gaze and haunted treasure.<br>They'll both slow you down.<br><br>And above all,<br>don't get caught by the Basilisk<br>or he'll eat you up!</p>
 
-		<img class="hometile-basilisk game-icon" src="images/basiliskmaze_hometile.png" alt="Food Chain">
+		<img class="basilisk-pic profile-pic" src="images/basiliskmaze_hometile.png" alt="Food Chain">
 		<h2>App Store Description</h2>
 		<p>He’s the thing of nightmares to all creatures of the Fairy Lands: the Basilisk, a colossal beast with a paralyzing gaze and jaws big enough to gobble up a dragon whole! He makes his home deep inside a maze of ancient catacombs, hoarding wealth stolen from his scores of unfortunate victims. Many foolhardy adventurers have ventured into this lair, hoping to take a small piece of his riches for themselves, but few ever come back to tell the tale. Will you be one of the lucky ones?
 		<br><br>The Basilisk’s Maze is a simple, spooky arcade game where you take control of a denizen of a fairy tale land and enter a randomly-generated maze looking for gold, while a monster lurks in the shadows waiting to eat you. You must avoid this beast at all costs! Don't even let him see you, as his gaze can slow you down and make you an easy meal! Evade the monster and grab his treasure, but watch out! Some of it is haunted by ghosts that don't take kindly to being stepped on!
@@ -50,6 +50,7 @@
 			var gameInstance = UnityLoader.instantiate("gameContainer", "play_basilisk/Build/play_basilisk.json");
     		// Doing this because I don't feel like reverse-engineering Unity's loader to figure out where it adds inline styles that do nothing but screw up my own styling:
     		$("#gameContainer").removeAttr('style');
+    		document.querySelector("#tooSmallNotice").innerText = "Resize your browser to continue playing...";
 		}
     </script>
 	<script src="js/scripts.js"></script>
