@@ -12,6 +12,12 @@ body {
 	font-family: 'Almendra', serif;
 }
 
+@media (max-width: 576px) {
+	body {
+		overflow-wrap: break-word;
+	}
+}
+
 .container {
 	margin-top: 10px;
 	margin-bottom: 50px;
@@ -99,7 +105,7 @@ img, .has-shadow {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .foodchain-pic, .basilisk-pic {
@@ -118,10 +124,46 @@ img, .has-shadow {
 .bio-pic {
 	width: 300px;
 	height: 400px;
-	margin: 10px;
 }
 
+/* Reduce picture size on small screens */
+@media (max-width: 576px) {
+	.navbar-brand>img {
+		width: 150px;
+	}
+
+	.gpBadge {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 768px /*md*/) {
+	.foodchain-pic, .basilisk-pic {
+		width: 250px;
+		height: 250px;
+	}
+
+	.bio-pic {
+		width: 225px;
+		height: 300px;
+	}
+}
+
+@media (min-width: 768px /*md*/) and (max-width: 992px) {
+	.foodchain-pic, .basilisk-pic {
+		width: 300px;
+		height: 300px;
+	}
+
+	.bio-pic {
+		width: 240px;
+		height: 320px;
+	}
+}
+
+/* Make profile pictures float right on large screens */
 @media (min-width: 768px /*md*/) {
+
 	.profile-pic {
 		float: right;
 		margin: 20px;
@@ -142,6 +184,12 @@ img, .has-shadow {
 	border-radius: 0;
 	box-shadow: none;
 	background-color: var(--back);
+}
+
+@media (max-width: 576px) {
+	.gpBadge {
+		max-width: 250px;
+	}
 }
 
 /* BASILISK'S MAZE */
